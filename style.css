@@ -1,0 +1,164 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #9a4d9a;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #6e2b6e;
+  }
+  
+  /* Header styling */
+  header {
+    background: #fff0f7;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #6e2b6e;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    margin: 0 12px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+  
+  nav a:hover {
+    background-color: #f5e1f5;
+  }
+  
+  /* Hero section (Homepage) */
+  .hero {
+    background: linear-gradient(to right, #ffe6f2, #fff0f5);
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    color: #6e2b6e;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #9a4d9a;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #6e2b6e;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #9a4d9a;
+  }
+  
+  main p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Product cards */
+  main div[style*="flex"] > div {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  main div[style*="flex"] > div:hover {
+    transform: translateY(-5px);
+  }
+  
+  h3 {
+    color: #6e2b6e;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+  }
+  
+  /* Footer styling */
+  footer {
+    background: #fff0f7;
+    color: #6e2b6e;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 8px 0;
+    }
+  
+    main div[style*="flex"] {
+      flex-direction: column;
+    }
+  }
+  
